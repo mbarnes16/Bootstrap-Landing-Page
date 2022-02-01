@@ -1,0 +1,96 @@
+// override all variables first
+$primary: #fff;
+$tertiary: goldenrod;
+$secondary: #003e7a;
+$unactiveTab: #ebf2fa;
+$nav-pills-link-active-color: $secondary;
+$theme-colors: (
+"tertiary": $tertiary,
+        "unactiveTab": #ebf2fa,
+);
+
+.jumbotron {
+  background: url('https://www.wctc.edu/_site-images/it-web-and-software-developer-bl.jpg') no-repeat;
+  background-size: cover;
+  height:460px;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  }
+
+.nav-pills{
+  background-color: $secondary;
+  color: $primary;
+}
+.nav-pills .active{
+  background-color: $primary;
+  color: $secondary;
+}
+
+.card-header{
+  color: $secondary;
+  background-color: $unactiveTab;
+}
+.card-header .btn[aria-expanded=true] {
+  color: $primary;
+  background-color: $secondary;
+}
+.card-header .btn[aria-expanded=false] {
+  color: $secondary;
+}
+.card.show {
+  background-color: $primary;
+}
+.card-body .btn[aria-expanded=ture]{
+  background-color: $primary;
+}
+.card-header .active[aria-expanded=true]{
+  background-color: $secondary;
+}
+.card-header{
+  background-color: $secondary;
+}
+a:hover{
+  text-decoration: none;
+}
+.container-2{
+  background-color: $unactiveTab;
+  padding: 50px 20px;
+}
+.container-3{
+  border-bottom: $tertiary;
+  border-bottom-width: medium;
+  border-top: $tertiary;
+  border-top-width: thick;
+}
+.container-5{
+  padding: 50px 20px;
+}
+.list-group-item-action .active {
+  color: $secondary;
+}
+.list-group{
+  justify-items: start;
+  border-width: thin;
+  border-color: $tertiary;
+}
+.container-7{
+  border-style: solid;
+  border-width: thick;
+  border-color: $tertiary;
+  padding-bottom: 20px;
+}
+.container-8{
+  padding-top: 20px;
+  border-color: $unactiveTab;
+  background-color: $primary;
+}
+.table-sm{
+  border-width: thin;
+  border-color: $secondary;
+  border-style: solid;
+  background-color: $unactiveTab;
+}
+
+// import bootstrap library
+@import "bootstrap/bootstrap";
